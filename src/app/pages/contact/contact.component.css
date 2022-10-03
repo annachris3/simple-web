@@ -1,0 +1,7 @@
+.container{
+  color: var(--last-color);
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+
+}

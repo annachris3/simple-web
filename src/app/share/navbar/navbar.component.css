@@ -1,0 +1,15 @@
+ .navbar-brand{
+  color: var(--last-color);
+ }
+
+ .navbar .navbar-nav .nav-link.active-link{
+  color: var(--last-color);
+  font-weight: bold;
+  transition: 1s;
+}
+.navbar .navbar-nav .nav-link.active-link:hover{
+  color: var(--third-color);
+
+}
+
+

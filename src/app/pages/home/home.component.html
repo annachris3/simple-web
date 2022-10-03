@@ -1,0 +1,40 @@
+<div class="banner">
+  <div class="content">
+    <h1>Hey Guys, <br>Do you wanna see the best of the world!?</h1>
+    <a routerLink="menu">Explore our islands! <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+    <div class="container mt-5 mb-4">
+      <h2 class="text-center">Travel with passion</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="box">
+            <h3>1</h3>
+            <p>Choose</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box">
+            <h3>2</h3>
+            <p>Select</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box">
+            <h3>3</h3>
+            <p>Go!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor='let tv of travelData'>
+          <div class="travelbox">
+            <img src="{{tv.travelImg}}"/>
+            <h4>{{tv.travelName}}</h4>
+          </div>
+        </div>
+      </div>
+      <a routerLink="menu" class="more">more...  <i class="bi bi-arrow-right"></i></a>
+    </div>

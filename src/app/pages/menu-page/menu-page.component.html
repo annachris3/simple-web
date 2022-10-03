@@ -1,0 +1,40 @@
+<div class="container mt-5 mb-5">
+
+  <a routerLink="../../menu" class="btn-back mt-5 mb-1" >Back <i class="bi bi-backspace-fill"></i></a>
+  <div class="row">
+    <div class="col-lg-6" *ngIf='menuData'>
+      <h4 class="text-center">{{menuData[0].travelName}}</h4>
+        <img src="{{menuData[0].travelImg}}" width="100%"/>
+        <p>{{menuData[0].travelDetails}}</p>
+        <p>{{menuData[0].travelPrice | currency:''}}</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="section-form ">
+        <h2 class="text-center mb-2"><strong>Contact</strong></h2>
+        <p>Please, send us your contact and we will prepare your dream travel!</p>
+      </div>
+        <form action="">
+          <div class="row">
+
+            <div class="col-lg-6 mt-3 mb-2">
+              <input class="form-control" type="text" placeholder="your name">
+            </div>
+            <div class="col-lg-6 mt-3 mb-2">
+              <input class="form-control" type="email" placeholder="your email">
+            </div>
+            <div class="col-lg-6 mt-3 mb-2">
+              <input class="form-control" type="date" placeholder="select">
+            </div>
+            <div class="col-lg-6 mt-3 mb-2">
+
+              <textarea class="form-control" placeholder="how many people"></textarea>
+          </div>
+            <div class="col-lg-10 mt-3 mb-2">
+              <textarea class="form-control placeholder-wave" placeholder="more information about your wishes"></textarea>
+            </div>
+          </div>
+          <button class="btn-send btn-md mt-3">Send your wish!</button>
+        </form>
+    </div>
+  </div>
+</div>
